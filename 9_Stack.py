@@ -9,6 +9,9 @@ Created on Tue Feb 18 14:50:29 2020
 import sys
 import collections
 
+# Stack : FILO
+# DFS (깊이 우선 탐색)에 사용
+
 
 if __name__ == '__main__':
     stack = collections.deque()

@@ -8,6 +8,10 @@ Created on Tue Feb 18 14:50:29 2020
 
 import sys
 
+# 크루스칼 알고리즘 : 가장 적은 비용으로 모든 노드를 연결
+# 간선 숫자는 반드시 node 개수 - 1:
+# e.g. node가 7일때 간선은 6
+
 
 def getParent(parent=[], x=0):
     if parent[x] is x:
@@ -45,8 +49,6 @@ class Edge():
 
 if __name__ == '__main__':
     # Baekjoon : 1197
-    # 간선 숫자는 반드시 node 개수 - 1:
-    # e.g. node가 7일때 간선은 6
     command = sys.stdin.readline().strip()
     V, E = int(command.split(' ')[0]), int(command.split(' ')[1])
 
