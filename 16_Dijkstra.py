@@ -8,7 +8,7 @@ Created on Tue Feb 18 14:50:29 2020
 
 import sys
 import heapq
-
+from collections import defaultdict
 # 다익스트라 알고리즘 : 최단 경로 탐색 알고리즘
 # DP or Greedy search 기반 알고리즘
 # 하나의 노드로 부터 다른 모든 노드로 가는 최단 경로를 계산
@@ -18,7 +18,7 @@ INF = 1000000000
 num = 6
 visit = [0] * num
 cost = [0] * (num + 1)
-dis = {i: [] for i in range(num + 1)}
+dis = {i: i for i in range(num + 1)}
 
 # 선형 탐색 : O(N^2) 비효율
 """
@@ -62,6 +62,7 @@ if __name__ == '__main__':
     print(cost)
 """
 
+
 class PriorityQueue():
     def __init__(self):
         self.queue = []
@@ -95,7 +96,7 @@ def dijkstra(start=0):
     # 가까운 순서대로 처리
     while not pq.empty():
         c_idx = pq.top()[1]
-        # 짧은 것이 먼저 오도록 음수화 (-) gkqslek.
+        #
         distance = pq.top()[0]
         pq.pop()
 
