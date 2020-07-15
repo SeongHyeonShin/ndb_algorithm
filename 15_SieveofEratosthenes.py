@@ -57,5 +57,13 @@ if __name__ == '__main__':
 
     M, N = int(command.split(' ')[0]), int(command.split(' ')[1])
 
+    # python식 에라토스테네스의 체
+    # a = set()
+    # for i in range(len(n)):
+    #     a |= set(map(int, map("".join, permutations(list(n), i + 1))))
+    # a -= set(range(0, 2))
+    # for i in range(2, int(max(a) ** 0.5) + 1):
+    #     a -= set(range(i * 2, max(a) + 1, i))
+
     for primenumber in SieveofEratoshenes(M=M, N=N):
         print(primenumber)
