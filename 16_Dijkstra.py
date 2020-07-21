@@ -117,7 +117,6 @@ def dijkstra(start=0):
 
 if __name__ == "__main__":
     numbers =[30, 3]
-    solution(numbers=numbers)
 
     for i in range(1, num + 1):
         cost[i] = INF

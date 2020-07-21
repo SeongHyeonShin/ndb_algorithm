@@ -6,6 +6,7 @@ Created on Tue Feb 18 14:50:29 2020
 
 """
 
+
 def sum_number(arr=[]):
     total = 0
     for ii in arr:
